@@ -2,7 +2,7 @@
 
 A C# library that implements various Condorcet voting algorithms.
 
-[Hosted by GitHub](https://github.com/Perlkonig)
+[Hosted by GitHub](https://github.com/Perlkonig/Condorcet)
 
 ## Ballots
 
