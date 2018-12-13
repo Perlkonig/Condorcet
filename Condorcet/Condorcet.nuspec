@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Perlkonig.Condorcet</id>
+    <version>0.1.0</version>
+    <title>Condorcent</title>
+    <authors>Aaron Dalton (Perlkönig)</authors>
+    <owners>Aaron Dalton (Perlkönig)</owners>
+    <licenseUrl>https://github.com/Perlkonig/Condorcet/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Perlkonig/Condorcet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET implementation of various Condorcet voting algorithms</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Voting Condorcet Schulze</tags>
+  </metadata>
+  
+  <files>
+    <file src="../README.md" target="" />
+  </files>
+</package>
