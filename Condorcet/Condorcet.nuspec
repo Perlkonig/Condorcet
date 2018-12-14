@@ -6,8 +6,8 @@
     <title>Condorcent</title>
     <authors>Aaron Dalton (Perlkönig)</authors>
     <owners>Aaron Dalton (Perlkönig)</owners>
-    <licenseUrl>https://github.com/Perlkonig/Condorcet/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Perlkonig/Condorcet</projectUrl>
+    <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET implementation of various Condorcet voting algorithms</description>
     <releaseNotes>Added RankedPair algorithm</releaseNotes>

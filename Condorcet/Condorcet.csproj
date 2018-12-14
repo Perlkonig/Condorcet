@@ -8,7 +8,7 @@
     <Description>.NET library implementing various Condorcet voting algorithms</Description>
     <Copyright>Copyright Aaron Dalton 2018</Copyright>
     <PackageLicenseUrl>https://github.com/Perlkonig/Condorcet/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl />
+    <PackageProjectUrl>https://github.com/Perlkonig/Condorcet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Perlkonig/Condorcet</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>Voting Condorcet Schulze RankedPair</PackageTags>
