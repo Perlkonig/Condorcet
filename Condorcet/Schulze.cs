@@ -88,14 +88,8 @@ namespace Condorcet
 
         public override T[] Rank()
         {
-            //Calculate d[V,W]
-            Dictionary<T, Dictionary<T, uint>> d = this.CalcD();
-
-            //Calculate p[V,W]
-            Dictionary<T, Dictionary<T, uint>> p = this.CalcP(d);
-
             //Count wins
-            Dictionary<T, uint> wins = this.CountWins(p);
+            Dictionary<T, uint> wins = RankWithValues();
 
             //sort `candidates` by wins and return
             T[] ranked = candidates.ToArray();
@@ -103,7 +97,7 @@ namespace Condorcet
             return ranked;
         }
 
-        public override Dictionary<T, uint> RankWithValues()
+        public Dictionary<T, uint> RankWithValues()
         {
             //Calculate d[V,W]
             Dictionary<T, Dictionary<T, uint>> d = this.CalcD();

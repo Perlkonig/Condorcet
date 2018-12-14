@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Aaron Dalton (Perlkönig)</Authors>
     <Company>Aaron Dalton (Perlkönig)</Company>
     <Description>.NET library implementing various Condorcet voting algorithms</Description>
@@ -11,7 +11,7 @@
     <PackageProjectUrl />
     <RepositoryUrl>https://github.com/Perlkonig/Condorcet</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>Voting Condorcet Schulze</PackageTags>
+    <PackageTags>Voting Condorcet Schulze RankedPair</PackageTags>
   </PropertyGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Perlkonig.Condorcet</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <title>Condorcent</title>
     <authors>Aaron Dalton (Perlkönig)</authors>
     <owners>Aaron Dalton (Perlkönig)</owners>
@@ -10,9 +10,9 @@
     <projectUrl>https://github.com/Perlkonig/Condorcet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET implementation of various Condorcet voting algorithms</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Added RankedPair algorithm</releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>Voting Condorcet Schulze</tags>
+    <tags>Voting Condorcet Schulze RankedPair</tags>
   </metadata>
   
   <files>

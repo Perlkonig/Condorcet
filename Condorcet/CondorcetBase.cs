@@ -70,7 +70,5 @@ namespace Condorcet
         }
 
         public abstract T[] Rank();
-
-        public abstract Dictionary<T, uint> RankWithValues();
     }
 }

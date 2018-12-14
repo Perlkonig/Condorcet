@@ -23,9 +23,11 @@ Dictionary<char, uint> b1 = new Dictionary<char, uint>
 
 ## Available Algorithms
 
+For all algorithms, the constructor takes the list of candidates, after which you can use the `AddBallot` method. You can then call the `Rank` method to get a list of candidates in order, winner first. 
+
 ### Schulze
 
-A description of the method can be found on [Wikipedia](https://en.wikipedia.org/wiki/Schulze_method). The constructor takes the list of candidates, after which you can use the `AddBallot` method. You can then call the `Rank` method to get a list of candidates in order, winner first. You can also call `RankWithValues` if you want to see each candidate with their ranking.
+A description of the method can be found on [Wikipedia](https://en.wikipedia.org/wiki/Schulze_method).
 
 ```csharp
 using System.Collections.Generic;
@@ -53,6 +55,33 @@ s.AddBallot(ballot, 50);
 char[] ranked = s.Rank();
 
 //Because everybody voted unanimously, you should get the array ['A', 'C', 'B', 'E', 'D'].
+//See the tests for more examples.
+```
+
+### Ranked Pairs
+
+A description of the method can be found on [Wikipedia](https://en.wikipedia.org/wiki/Ranked_pairs).
+
+```csharp
+using System.Collections.Generic;
+using Condorcet;
+
+HashSet<string> candidates = new HashSet<string> {"Memphis", "Nashville", "Chattanooga", "Knoxville"};
+
+Dictionary<string, uint> b1 = new Dictionary<string, uint>
+{
+    {"Chattanooga", 1},
+    {"Knoxville", 2},
+    {"Nashville", 3},
+    {"Memphis", 4}
+};
+
+RankedPair<string> s = new RankedPair<string>(candidates);
+s.AddBallot(b1, 42);
+string[] expected = new string[] {"Chattanooga", "Knoxville", "Nashville", "Memphis"};
+Assert.True(expected.SequenceEqual(s.Rank()));
+
+//Because everybody voted unanimously, you should get the array ["Chattanooga", "Knoxville", "Nashville", "Memphis"].
 //See the tests for more examples.
 ```
 
